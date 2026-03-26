@@ -11,9 +11,10 @@ class Student(models.Model):
     student_email = models.EmailField()
     student_phone = models.CharField(max_length=100)
     student_address = models.TextField()
-
     def __str__(self):
         return self.student_name
 
-
-
+class Course(models.Model):
+    course_id = models.IntegerField(max_length=100)
+    course_name = models.CharField(max_length=100)
+    course_instructor = models.CharField(max_length=100)

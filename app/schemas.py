@@ -11,3 +11,7 @@ class StudentResponse(BaseModel):
     student_email:EmailStr
     student_age:int
 
+class CourseCreate(BaseModel):
+    course_id:int
+    course_name: str
+    course_instructor: str
